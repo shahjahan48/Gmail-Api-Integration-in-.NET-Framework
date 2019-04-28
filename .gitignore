@@ -343,5 +343,5 @@ healthchecksdb
 # Backup folder for Package Reference Convert tool in Visual Studio 2017
 MigrationBackup/
 
-# My specific file
-Services/credentials.json
+# My specified file
+/Services/credentials.json
