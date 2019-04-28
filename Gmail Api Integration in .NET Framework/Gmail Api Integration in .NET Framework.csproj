@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Compose Email.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compose Email.Designer.cs">
+      <DependentUpon>Compose Email.cs</DependentUpon>
+    </Compile>
     <Compile Include="Gmail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Compose Email.resx">
+      <DependentUpon>Compose Email.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Gmail.resx">
       <DependentUpon>Gmail.cs</DependentUpon>
     </EmbeddedResource>
@@ -80,6 +89,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{e80fc423-b5ea-4acc-8497-aa62f71453a1}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Services\Services.csproj">
       <Project>{e205c089-9c20-456f-b64b-5141a7fbf3a9}</Project>
       <Name>Services</Name>
