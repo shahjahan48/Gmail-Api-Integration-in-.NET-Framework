@@ -198,8 +198,7 @@ namespace Services
 
                 return str;
             }
-        }
-        
+        }        
         private string GmailFilter(DateTime afterDate, DateTime beforeDate)
         {
             var filter = "after:" + afterDate.ToString("yyyy/MM/dd", CultureInfo.InvariantCulture) + " ";

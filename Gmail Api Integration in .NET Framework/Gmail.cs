@@ -35,7 +35,7 @@ namespace Gmail_Api_Integration_in.NET_Framework
         private void LoadMessages(string category)
         {
             EmailServices es = new EmailServices();
-            dgvInbox.DataSource = es.GetRangedEmails(DateTime.Now.AddDays(-1), DateTime.Now.AddDays(1), category);
+            dgvInbox.DataSource = es.GetRangedEmails(DateTime.Now.AddDays(-3), DateTime.Now.AddDays(1), category);
         }
 
         private void worker_DoWork(object sender, DoWorkEventArgs e)
